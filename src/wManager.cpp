@@ -313,6 +313,8 @@ void wifiManagerProcess() {
     if (newStatus != oldStatus) {
         if (newStatus == WL_CONNECTED) {
             Serial.println("CONNECTED - Current ip: " + WiFi.localIP().toString());
+            Serial.println("CONNECTED - Gateway ip: " + WiFi.gatewayIP().toString());
+            Serial.println("CONNECTED - Dns ip: " + WiFi.dnsIP().toString());
         } else {
             Serial.print("[Error] - current status: ");
             Serial.println(newStatus);

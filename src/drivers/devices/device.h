@@ -43,6 +43,8 @@
 #include "waveshareS3Geek.h"
 #elif defined(NERDMINER_T_HMI)
 #include "lilygoT_HMI.h"
+#elif defined(ADAFRUIT_FEATHER_ESP32S3_TFT)
+#include "adafruit_feather_esp32s3_tft.h"
 
 
 #else
